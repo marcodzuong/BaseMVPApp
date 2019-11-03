@@ -1,6 +1,5 @@
 package com.example.myapplication.base;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.facebook.drawee.backends.pipeline.Fresco;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -25,6 +26,7 @@ public abstract class BaseFragment<P extends BasePresenterImp> extends Fragment 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        Fresco.initialize(getContext());
         View view =  inflater.inflate(getViewLayout(), container, false);
         mUnbinder= ButterKnife.bind(this,view);
         updateView();
@@ -32,11 +34,10 @@ public abstract class BaseFragment<P extends BasePresenterImp> extends Fragment 
     }
 
 
-
+    public abstract int getViewLayout();
 
     public abstract void updateView();
 
-    public abstract int getViewLayout();
 
     @Override
     public void onDetach() {

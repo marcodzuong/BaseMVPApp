@@ -1,10 +1,8 @@
-package com.example.myapplication;
+package com.example.myapplication.network.base;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.myapplication.network.model.GetUserResponse;
 
 import io.reactivex.disposables.CompositeDisposable;
 

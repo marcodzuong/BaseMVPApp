@@ -1,7 +1,7 @@
 package com.example.myapplication.ui.main;
 
-import com.example.myapplication.AppRemoteDataSource;
 import com.example.myapplication.base.BasePresenterImp;
+import com.example.myapplication.network.base.AppRemoteDataSource;
 
 public class MainPresenterImp<V extends MainMvpView> extends BasePresenterImp<V> implements MainPresenter<V> {
 

@@ -3,4 +3,21 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_logout"><font color="#FF6363">Thoát tài khoản</font><br /></string>
+    <string name="invite_play_game"><font color="#16161F" size="20">Muốn hẹn chơi game</font><br /></string>
+    <string name="want_to_appointment"><font color="#FF6363" size="17">Muốn hẹn: </font><br /></string>
+    <string name="enject"><font color="#FFFFFF" size="17">Từ chối</font><br /></string>
+    <string name="accept"><font color="#FFFFFF" size="17">Đồng ý</font><br /></string>
+    <string name="chat"><font color="#161616" size="20">Chat</font><br /></string>
+    <string name="my_profile"><font color="#16161F" size="20">My profile</font><br /></string>
+    <string name="complete_your_profile"><font color="#161616" size="17">Complete your profile</font><br /></string>
+    <string name="edit_profile"><font color="#61616A" size="15">Edit profile</font><br /></string>
+    <string name="save_gifts_when_completed"><font color="#8E8E93" size="15">Save gifts when completed</font><br /></string>
+    <string name="filter"><font color="#161616" size="17">Bộ lọc</font><br /></string>
+    <string name="history"><font color="#161616" size="17">Lịch sử mời hẹn</font><br /></string>
+    <string name="setting"><font color="#161616" size="17">Setting</font><br /></string>
+    <string name="comments_and_error"><font color="#161616" size="17">Góp ý &amp; Báo lỗi</font><br /></string>
+    <string name="share"><font color="#161616" size="17">Chia sẻ</font><br /></string>
+    <string name="home"><font color="#161616" size="15">Home</font><br /></string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

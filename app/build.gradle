@@ -50,5 +50,14 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.10.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
 
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+
+    implementation('com.github.thekhaeng:pushdown-anim-click:1.1.1') {
+        exclude group: 'com.android.support'
+    }
+    //lopingView pager with banner
+    implementation 'com.asksira.android:loopingviewpager:1.2.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
 }

@@ -1,17 +1,14 @@
 package com.example.myapplication.ui.account;
 
 
-import android.content.Context;
-import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import android.widget.TextView;
 
-import com.example.myapplication.AppRemoteDataSource;
+import androidx.fragment.app.Fragment;
+
 import com.example.myapplication.R;
 import com.example.myapplication.base.BaseFragment;
+import com.example.myapplication.network.base.AppRemoteDataSource;
+import com.example.myapplication.ui.userdetail.UserDetailActivity;
 
 import butterknife.BindView;
 
@@ -34,6 +31,7 @@ public class LoginFragment extends BaseFragment<LoginPresenterImp> implements Lo
     @Override
     public void updateView() {
         mPresenter.login();
+        UserDetailActivity.start(getContext());
     }
 
     @Override

@@ -1,10 +1,7 @@
-package com.example.myapplication.ui;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.myapplication.ui.splash;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.myapplication.R;
@@ -16,13 +13,10 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     protected void updateView() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                AccountActivity.start(SplashActivity.this);
-                finish();
-            }
-        }, 2000);
+        new Handler().postDelayed(() -> {
+            AccountActivity.start(SplashActivity.this);
+            finish();
+        }, 3000);
     }
 
     @Override

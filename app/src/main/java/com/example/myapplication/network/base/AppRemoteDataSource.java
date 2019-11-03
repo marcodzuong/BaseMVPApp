@@ -1,11 +1,4 @@
-package com.example.myapplication;
-
-import com.example.myapplication.base.BaseRemote;
-import com.example.myapplication.network.AppService;
-import com.example.myapplication.network.model.GetUserResponse;
-
-import io.reactivex.Observable;
-import io.reactivex.Scheduler;
+package com.example.myapplication.network.base;
 
 public class AppRemoteDataSource extends BaseRemote {
 
